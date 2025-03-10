@@ -1,0 +1,31 @@
+.header {
+  z-index: 3;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+.header h1 {
+  font-size: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.header button {
+  font-size: 30px;
+  font-style: italic;
+}
+.header button:hover {
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}

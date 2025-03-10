@@ -233,4 +233,9 @@ button:-moz-focusring,
 
 button {
   cursor: pointer;
+  background: transparent;
+}
+
+.body-container {
+  min-height: calc(100vh - 200px);
 }

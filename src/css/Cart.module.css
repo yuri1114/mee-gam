@@ -1,0 +1,82 @@
+.inner {
+  width: 100%;
+  padding: 30px;
+}
+
+.cartItem {
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.thumbnail {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 33px;
+  background: pink;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.desc {
+  width: calc(100% - 15vw - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemName {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.itemPrice {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 50px;
+}
+
+.delete {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #d61c1f;
+  padding: 8px;
+  border-radius: 7px;
+  color: #d61c1f;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.num button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+}
+
+.pay {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+.total {
+  margin: 50px 0;
+  text-align: right;
+}
+.total span {
+  font-weight: 700;
+}
