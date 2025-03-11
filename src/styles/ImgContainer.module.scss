@@ -1,12 +1,13 @@
 .main {
   width: 100%;
+  margin-bottom: 200px;
 }
 
 .container {
   width: 100%;
   height: 45vh;
   border-radius: 33px;
-
+  transition: all 0.8s ease-in-out;
   overflow: hidden;
   img {
     width: 100%;
@@ -29,14 +30,13 @@
     line-height: 66px;
     font-weight: 900;
   }
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  &.hidden {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
 }

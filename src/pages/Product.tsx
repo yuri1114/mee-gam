@@ -1,12 +1,14 @@
-import ListContainer from "../components/ListContainer";
 import Tabbar from "../components/Tabbar";
 import styles from "../styles/Product.module.scss";
-
+import ItemCard from "../components/ItemCard";
 const Product = () => {
   return (
     <div className={styles.padding}>
       <Tabbar></Tabbar>
-      <ListContainer></ListContainer>
+
+      <div className={styles.list}>
+        <ItemCard />
+      </div>
     </div>
   );
 };

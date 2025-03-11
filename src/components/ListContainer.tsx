@@ -4,10 +4,7 @@ import ItemCard from "../components/ItemCard";
 const ListContainer = () => {
   return (
     <div className={styles.list}>
-      <ItemCard></ItemCard>
-      <ItemCard></ItemCard>
-      <ItemCard></ItemCard>
-      <ItemCard></ItemCard>
+      <ItemCard maxVisible={9} />
     </div>
   );
 };

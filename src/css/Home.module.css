@@ -6,4 +6,5 @@ body {
 .inner {
   width: 100%;
   padding: 20px;
+  min-height: 300vh;
 }

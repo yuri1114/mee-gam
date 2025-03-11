@@ -7,14 +7,18 @@ const ImgContainer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       SetIsVisible(true);
-    }, 1000);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className={styles.main}>
-      <div className={styles.container}>
+      <div
+        className={`${styles.container} ${
+          isVisible ? styles.visible : styles.hidden
+        }`}
+      >
         <img src="./imgs/main01.png" alt="" />
       </div>
       <p

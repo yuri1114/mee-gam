@@ -1,7 +1,20 @@
+.container {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .imgWrap {
   width: 100%;
   height: 90%;
-  background: pink;
+}
+.imgWrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .textWrap {
@@ -23,7 +36,24 @@
   position: relative;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 .item .addToCart {
   opacity: 1;
+}
+
+.loader {
+  width: 100%;
+  height: 50px;
+  background: none;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(10px);
 }
