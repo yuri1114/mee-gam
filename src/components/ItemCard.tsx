@@ -14,6 +14,7 @@ const ItemCard = ({ maxVisible }: ItemCardProps) => {
   const loaderRef = useRef<HTMLDivElement | null>(null);
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
   const navigate = useNavigate();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisibleItems((prev) => [
@@ -29,7 +30,6 @@ const ItemCard = ({ maxVisible }: ItemCardProps) => {
 
   useEffect(() => {
     if (!loaderRef.current) return;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
