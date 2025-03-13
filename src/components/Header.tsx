@@ -21,13 +21,7 @@ const Header = () => {
         >
           PRODUCT
         </button>
-        <button
-          onClick={() => {
-            navigate("/cart");
-          }}
-        >
-          LOCATION
-        </button>
+
         <button
           onClick={() => {
             navigate("/cart");

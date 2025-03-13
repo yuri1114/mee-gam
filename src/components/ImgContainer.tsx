@@ -2,6 +2,7 @@ import styles from "../styles/ImgContainer.module.scss";
 import { useState, useEffect } from "react";
 
 const ImgContainer = () => {
+  // TODO 배포 후, 다른 메뉴 갔다가 홈으로 다시 돌아오면 이미지 깨지는 문제 있음
   const [isVisible, SetIsVisible] = useState(false);
 
   useEffect(() => {
