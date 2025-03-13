@@ -26,6 +26,13 @@ const Header = () => {
             navigate("/cart");
           }}
         >
+          LOCATION
+        </button>
+        <button
+          onClick={() => {
+            navigate("/cart");
+          }}
+        >
           CART
         </button>
       </div>
