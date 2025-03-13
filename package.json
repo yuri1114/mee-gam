@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jyuri1114.github.io/mee-gam",
+  "homepage": "/mee-gam",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
