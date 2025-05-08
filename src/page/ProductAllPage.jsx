@@ -10,7 +10,8 @@ const ProductAllPage = () => {
   const getProducts = async () => {
     let searchQuery = query.get("q") || "";
 
-    let url = `http://localhost:5000/products?q=${searchQuery}`;
+    // let url = `http://localhost:5000/products?q=${searchQuery}`;
+    let url = `/products.json`;
     let response = await fetch(url);
     let data = await response.json();
 
@@ -18,8 +19,8 @@ const ProductAllPage = () => {
 
     // 1. 카테고리 필터
     let filtered = category
-      ? data.filter((item) => item.product === category)
-      : data;
+      ? data.products.filter((item) => item.product === category)
+      : data.products;
 
     // 2. 이름 기반 검색 필터 추가
     if (searchQuery) {
@@ -33,7 +34,8 @@ const ProductAllPage = () => {
 
   useEffect(() => {
     getProducts();
-  }, [setQuery]);
+  }, [query]);
+
   return (
     <div className="container bg">
       <div className="inner-container">

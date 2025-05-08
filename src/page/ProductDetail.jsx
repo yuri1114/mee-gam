@@ -11,6 +11,8 @@ const ProductDetail = () => {
 
     setProduct(data);
   };
+
+  
   const addCart = () => {};
   useEffect(() => {
     getProductDetail();
